@@ -1,0 +1,115 @@
+@import "colors.rasi"
+
+configuration {
+    modi: "drun";
+    font: "Nunito Bold 10";
+    display-drun: "";
+    show-icons: true;
+    icon-theme: "Reversal-purple-dark";
+    drun-display-format: "{name}";
+    hide-scrollbar: true;
+    scrollbar: false;
+    disable-history: false;
+    sidebar-mode: false;
+}
+
+window {
+    transparency: "real";
+    background-color: @bg;
+    text-color: @al;
+    width: 600px;
+    border: 2px;
+    border-color: @ac;
+    location: northwest;
+    x-offset: 0;
+    y-offset: 28px;
+    padding: 0;
+    margin: 0;
+}
+
+prompt {
+    padding: 4px 4px 0px 4px;
+    text-color: @al;
+    background-color: @bg;
+}
+
+entry {
+    background-color: @bg;
+    text-color: @al;
+    placeholder-color: @fg;
+    padding: 2px 0px 0px 0px;
+}
+
+inputbar {
+    children: [ prompt, entry ];
+    background-color: @bg;
+    text-color: @al;
+    border: 0px 0px 2px 0px;
+    border-color: @ac;
+    padding: 4px;
+}
+
+listview {
+    background-color: @bg;
+    columns: 4;
+    lines: 2;
+    cycle: true;
+    dynamic: true;
+    layout: vertical;
+    padding: 4px;
+    scrollbar: false;
+}
+
+mainbox {
+    background-color: @bg;
+    children: [ inputbar, listview ];
+}
+
+element {
+    background-color: @bg;
+    text-color: @al;
+    orientation: vertical;
+    border: 0;
+}
+
+element-icon {
+    background-color: @bg;
+    text-color: @al;
+    size: 40px;
+}
+
+element-text {
+    background-color: @bg;
+    text-color: @al;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+}
+
+element normal.normal,
+element normal.urgent,
+element alternate.urgent,
+element alternate.normal {
+    background-color: @bg;
+    text-color: @al;
+    border: 0;
+}
+
+element selected,
+element selected.normal,
+element selected.urgent,
+element selected.active {
+    background-color: @bg;
+    text-color: @al;
+    border: 0px 0px 2px 0px;
+    border-color: @ac;
+}
+
+element selected.urgent {
+    background-color: @bg;
+    text-color: @al;
+}
+
+element selected.active {
+    background-color: @bg;
+    text-color: @al;
+}

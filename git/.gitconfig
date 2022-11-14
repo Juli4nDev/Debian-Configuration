@@ -1,0 +1,9 @@
+[user]
+	name = Julian Acosta
+	email = me@juli4n.dev
+	username = Juli4nDev
+[init]
+	defaultBranch = main
+[core]
+	editor = emacsclient
+

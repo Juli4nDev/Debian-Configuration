@@ -1,0 +1,67 @@
+@import "colors.rasi"
+
+configuration {
+    font: "Nunito Bold 10";
+    show-icons: true;
+    drun-display-format: "{name}";
+    disable-history: false;
+    fullscreen: false;
+    hide-scrollbar: true;
+    sidebar-mode: false;
+}
+
+window {
+    transparency: "real";
+    background-color: @bg;
+    text-color: @al;
+    border: 2px;
+    border-color: @ac;
+    width: 140px;
+    location: northeast;
+    x-offset: 0px;
+    y-offset: 28px;
+}
+
+listview {
+    background-color:               @bg;
+    padding:                        0px;
+    columns:                        1;
+    lines:                          2;
+    spacing:                        5px;
+    cycle:                          true;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color: @bg;
+    border: 0px;
+    border-radius: 0px;
+    border-color: @ac;
+    children: [ listview ];
+    padding: 5px;
+}
+
+element {
+    background-color: @bg;
+    text-color: @fg;
+    orientation: horizontal;
+    border-radius: 0px;
+    padding: 5px;
+}
+
+element-icon {
+    background-color: transparent;
+    text-color: inherit;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+element selected {
+    background-color: @ac;
+    text-color: @al;
+}

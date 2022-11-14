@@ -1,0 +1,22 @@
+@import "colors.rasi"
+
+* {
+    background-color: @bg;
+    text-color: @fg;
+    font: "Nunito Bold 10";
+}
+
+window {
+    width: 160px;
+    padding: 10px;
+    border: 2px;
+    border-color: @ac;
+    location: northeast;
+    x-offset: 0;
+    y-offset: 28px;
+}
+
+entry {
+    expand: true;
+    text-color: @fg;
+}
