@@ -112,6 +112,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export ALTERNATE_EDITOR=""
+export EDITOR="emacsclient -t"
+export VISUAL="emacsclient -c -a emacs"
+
 . "$HOME/.cargo/env"
 
 export PYENV_ROOT="$HOME/.pyenv"

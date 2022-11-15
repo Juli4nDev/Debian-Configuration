@@ -5,7 +5,7 @@
 [init]
 	defaultBranch = main
 [core]
-	editor = emacs
+	editor = emacsclient -c -a "emacs" %F
 
 [commit]
 	template = /home/juli4n/.gitcommit
